@@ -19,7 +19,7 @@ a {
 	background-color: #FB7FB2;
 	color: #6699cc;
 	height: 40px;
-	border-radius: 8px;
+	border-radius: 0px;
 	-moz-border-radius: 8 px;
 	-webkit-border-radius: 8px;
 }
