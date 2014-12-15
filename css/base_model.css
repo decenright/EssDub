@@ -47,11 +47,11 @@ footer{
 
 
   
-} .tagline1 {
-	font-family: "Lucida Console", Monaco, monospace;
-	font-size: 18px;
+ .tagline1 {
+	font-family: "Arial", Monaco, monospace;
+	font-size: 20px;
 	font-style: normal;
-	text-decoration: overline;
+	text-decoration: underline;
 	text-align: center;
 	color:white;
 }
