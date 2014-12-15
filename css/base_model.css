@@ -28,6 +28,7 @@ footer{
 	padding-right: 20px;
 	height: 35px;
 	
+	
 }
 
 .body {
@@ -45,6 +46,24 @@ footer{
 	background: url(../images/Home_Page_Graphic.png) no-repeat;
 	background-size: 100% 100%;
 }
+
+
+/*slider*/
+* {margin: 0; padding: 0;}
+
+.slider{
+	width: 640px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 320px; /*That helps bring the labels down*/
+	
+	margin: 100px auto;
+	
+	/*add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
 
 /*
 contacttitle {
@@ -70,7 +89,7 @@ contactmap {
 }
 
 
-}
+
   
  .tagline1 {
 	font-family: "Arial", Monaco, monospace;
