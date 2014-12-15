@@ -28,7 +28,6 @@ footer{
 	padding-right: 20px;
 	height: 35px;
 	
-	
 }
 
 .body {
@@ -46,18 +45,11 @@ footer{
 	background: url(../images/Home_Page_Graphic.png) no-repeat;
 	background-size: 100% 100%;
 }
-#copyright{
-	font-family: "Arial", Gadget, sans-serif;
-  font-size: 14px;
-  font-style: bold;
-  text-decoration: none;
-  text-align: center;
-	}
 
-/*slider*/
+
 /*Time for the CSS*/
 * {margin: 0; padding: 0;}
-
+body {background: #ccc;}
 
 .slider{
 	width: 640px; /*Same as width of the large image*/
