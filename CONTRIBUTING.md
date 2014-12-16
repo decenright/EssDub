@@ -1,4 +1,0 @@
-essential-dublin
-================
-
-Tourism website
