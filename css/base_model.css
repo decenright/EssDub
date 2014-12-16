@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*
+is this doing anything ? Declan
 body {
     background-color:#CCCC99;
     color: #000305;
@@ -7,21 +10,49 @@ body {
     font-size:99%;
     text-align:left;
     line-height: 1.5;
-	}
+	}*/
+	
+
 .navbar{
 	background-color:#FB7FB2;
+	}
+
+#canvas {
+	display: block;
+	width: 100%;	
+	background: url(../images/Home_Page_Graphic.png) no-repeat;
+	background-size: 100% 100%;
 }
-a {
-    text-decoration: none;
+	
+#homeContent{
+	width:100%;
+	height:300px;
+	overflow:auto;
+	}
+	
+#eventsContent{
+	margin-top:50px;
+	width:100%;
+	height:500px;
+	overflow:auto;
+	}
+	
+#irc_mi{
+	float:left;
+	margin-left: 120px;
+	margin-right: 20px;
+	}
+	
+#feedControl {
+	margin-left: 20px;
+	margin-right: 120px;
+	width : 440px;
+	font-size: 16px;
+	float:right;
+	background-color:#386697;
 }
-    a:link, a:visited {
-        color:#6699cc;
-    }
-    a:hover, a:active {
-         background-color:#6699cc;
-         color:#fff;		 
-}
-footer{
+
+.footer{
 	background-color: #FFF;
 	height: 80px;
 	width: 100%;
@@ -30,14 +61,13 @@ footer{
 	color: #336699;
 	padding-top: 45px;
 }
-.body footer img {
+.footer_img {
 	float: right;
 	padding-right: 20px;
+	padding-top:20px;
 	height: 35px;
-<<<<<<< HEAD
+	margin-right:30px;
 	
-=======
->>>>>>> FETCH_HEAD
 }
 .body {
 	background-color: #003366;
@@ -80,20 +110,6 @@ footer{
 	text-align: left;
 	color: #FFFFFF;
 }
-#canvas {
-	display: block;
-	width: 100%;	
-	background: url(../images/Home_Page_Graphic.png) no-repeat;
-	background-size: 100% 100%;
-}
-<<<<<<< HEAD
-
-
-/*Time for the CSS*/
-* {margin: 0; padding: 0;}
-body {background: #ccc;}
-=======
->>>>>>> FETCH_HEAD
 
 /*
 contacttitle {
@@ -129,6 +145,14 @@ contactmap {
 _______________________________________________________________________________________________________________________
 NAVIGATION
 
+a:link, a:visited {
+     color:#6699cc;
+}
+a:hover, a:active {
+     background-color:#6699cc;
+     color:#fff;		 
+}
+
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 #cssmenu {
   background-color: #FB7FB2;
@@ -139,7 +163,6 @@ NAVIGATION
   display: block;
   position: relative;
   font-family: 'PT Sans', sans-serif;
-  
 }
 #cssmenu ul {
 	list-style: none;
@@ -492,3 +515,63 @@ NAVIGATION
     top: 26px;
   }
 
+/*image slider*/_________________________________________________________________________________________________________________________________
+.slider{
+	width: 640px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 320px; /*That helps bring the labels down*/
+	
+	margin: 100px auto;
+	
+	/*Lets add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
