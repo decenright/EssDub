@@ -11,6 +11,8 @@ body {
     text-align:left;
     line-height: 1.5;
 	}*/
+* {margin: 0; padding: 0;}
+body {background: #ccc;}
 	
 
 .navbar{
@@ -52,7 +54,7 @@ body {
 	background-color:#386697;
 }
 
-.footer{
+.footer1{
 	background-color: #FFF;
 	height: 80px;
 	width: 100%;
@@ -61,12 +63,17 @@ body {
 	color: #336699;
 	padding-top: 45px;
 }
+.footer2{
+	background-color: #FFF;
+	height: 40px;
+	width: 100%;
+}
 .footer_img {
 	float: right;
 	padding-right: 20px;
 	padding-top:20px;
-	height: 35px;
-	margin-right:30px;
+	height: 45px;
+	margin-right:20px;
 	
 }
 .body {
@@ -133,14 +140,7 @@ contactmap {
   padding-top: 25px;
   float: right;
 }
- .tagline1 {
-	font-family: "Arial", Monaco, monospace;
-	font-size: 20px;
-	font-style: normal;
-	text-decoration: none;
-	text-align: center;
-	color:white;
-}
+
 
 _______________________________________________________________________________________________________________________
 NAVIGATION
